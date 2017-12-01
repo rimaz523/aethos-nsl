@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nikkah Sri Lanka</title>
+        <!-- Adding Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Adding MaterializeCSS -->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <style>
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+
+            .brand-logo {
+                display: inline-block;
+                height: 100%;
+            }
+
+            .brand-logo>div {
+                vertical-align: middle
+            }
+        </style>
+    </head>
+    <main class="grey lighten-1">
+        <!-- Top Menu Starts-->
+        <nav class="blue-grey darken-1">
+            <div class=" container nav-wrapper blue-grey darken-1">
+                <a href="#" class="brand-logo"><div style="font-family:Comic Sans MS;display:inline">Nikkah Sri Lanka</div><i class="large material-icons">group</i></a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"><a href="sass.html">Home</a></li>
+                    <li><a href="badges.html">Submit A Proposal</a></li>
+                    <li><a href="collapsible.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Top Menu Ends-->
+
+
+        <!--<div class="carousel">-->
+            <!--<a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>-->
+            <!--<a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>-->
+            <!--<a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>-->
+            <!--<a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>-->
+            <!--<a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>-->
+        <!--</div>-->
+
+        <div class="container row">
+            <div class="col s12 m12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">I'm Looking for :<i class="material-icons left">search</i></span>
+
+                        <form action="#">
+                            <div class="row">
+                                <div class="col s6">
+                                    <input type="checkbox" class="filled-in" id="brides"/>
+                                    <label for="brides">Brides</label>
+                                </div>
+                                <div class="col s6">
+                                    <input type="checkbox" class="filled-in" id="groom"/>
+                                    <label for="groom">Grooms</label>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <select>
+                                        <option value="" disabled selected>Choose Your Preferred Age Group</option>
+                                        <option value="1">Any</option>
+                                        <option value="2">Below 21</option>
+                                        <option value="3">Between 21 and 25</option>
+                                        <option value="4">Between 26 and 30</option>
+                                        <option value="5">Above 30</option>
+                                    </select>
+                                    <label>Age Group</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <select>
+                                        <option value="" disabled selected>Choose Your Preferred Location</option>
+                                        <option value="1">Any</option>
+                                        <option value="2">Colombo</option>
+                                        <option value="3">Galle</option>
+                                        <option value="4">Kandy</option>
+                                    </select>
+                                    <label>Location</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Search
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h5 class="center-align">Recent Additions</h5>
+                        <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, magnam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Hazeem Mohommed<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Profile</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">A bit about Hazeem...<i class="material-icons right">close</i></span>
+                            <p>Hey Hey Hey bitches!! Wassap? I like riding my bicycle and sniffing flowers during my spare time. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" height="200" width="50" src="images/grooms/rimaz.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Rimaz Mohommed<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Profile</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" height="200" width="50" src="images/grooms/annonymous.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Fathima Whatever<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Profile</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" height="200" width="50" src="images/grooms/anjelina.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Angelina Jolie<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Profile</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Profile</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Profile</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Profile</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Profile</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer class="page-footer blue-grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+//            $('.carousel').carousel();
+            $('select').material_select();
+        });
+
+    </script>
+</html>
