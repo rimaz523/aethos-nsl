@@ -36,6 +36,16 @@ and open the template in the editor.
             .brand-logo>div {
                 vertical-align: middle
             }
+            .customCard {
+                height: 200px;
+            }
+            .ansl-blockquote {
+                font-weight: bold;
+                margin-top: -5px;
+            }
+            .ansl-card-content {
+                /*padding: 5px !important;*/
+            }
         </style>
     </head>
     <main class="grey lighten-3">
@@ -120,64 +130,43 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col s12 m6 l3">
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
+                <div class="col s12 m6">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="images/grooms/annonymous.png" height="100" width="100">
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Hazeem Mohommed<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">View Profile</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">A bit about Hazeem...<i class="material-icons right">close</i></span>
-                            <p>Hey Hey Hey bitches!! Wassap? I like riding my bicycle and sniffing flowers during my spare time. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" height="200" width="50" src="images/grooms/rimaz.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Rimaz Mohommed<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">View Profile</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="card-title">Bride</span>
+                                <blockquote>Fathima Zainab</blockquote>
+                                <p>Age 21</p>
+                                <p>From Rathmalana</p>
+                                <p>Medium Complexion</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">View Profile</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l3">
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" height="200" width="50" src="images/grooms/annonymous.png">
+                <div class="col s12 m6">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="images/grooms/annonymous.png" height="100" width="100">
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Fathima Whatever<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">View Profile</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" height="200" width="50" src="images/grooms/anjelina.jpeg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Angelina Jolie<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">View Profile</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="card-title">Bride</span>
+                                <blockquote>Fathima Zainab</blockquote>
+                                <p>Age 21</p>
+                                <p>From Rathmalana</p>
+                                <p>Medium Complexion</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">View Profile</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -240,6 +229,36 @@ and open the template in the editor.
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card horizontal customCard">
+                        <div class="card-stacked">
+                            <div class="card-content ansl-card-content">
+                                <span class="card-title">Fathima Zainab</span>
+                                <blockquote class="ansl-blockquote">Bride</blockquote>
+                                <p>Age 21</p>
+                                <p>From Rathmalana</p>
+                                <p>Medium Complexion</p>
+                                <p><a href="#">View Profile</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card horizontal customCard">
+                        <div class="card-stacked">
+                            <div class="card-content ansl-card-content">
+                                <span class="card-title">Hazeem Haniff</span>
+                                <blockquote class="ansl-blockquote">Groom</blockquote>
+                                <p>Age 21</p>
+                                <p>From Rathmalana</p>
+                                <p>Medium Complexion</p>
+                                <p><a href="#">View Profile</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
