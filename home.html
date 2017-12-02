@@ -17,6 +17,7 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
         <style>
             body {
                 display: flex;
@@ -43,83 +44,81 @@ and open the template in the editor.
                 font-weight: bold;
                 margin-top: -5px;
             }
-            .ansl-card-content {
-                /*padding: 5px !important;*/
-            }
         </style>
     </head>
-    <main class="grey lighten-3">
+    <main>
         <!-- Top Menu Starts-->
-        <nav class="blue-grey darken-1">
-            <div class=" container nav-wrapper blue-grey darken-1">
-                <a href="#" class="brand-logo"><div style="font-family:Comic Sans MS;display:inline">Nikkah Sri Lanka</div><i class="large material-icons">group</i></a>
+        <div id="sticker">
+            <nav class="blue-grey darken-1">
+                <div class=" container nav-wrapper blue-grey darken-1">
+                    <a href="#" class="brand-logo"><div style="font-family:Comic Sans MS;display:inline">Nikkah Sri Lanka</div><i class="large material-icons">group</i></a>
 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li class="active"><a href="home.html">Home</a></li>
-                    <li><a href="submit.html">Submit A Proposal</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </div>
-        </nav>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li><a href="submit.html">Submit A Proposal</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <!-- Top Menu Ends-->
+        <div class="parallax-container">
+            <div class="parallax"><img src="images/backgrounds/background_1.jpg" style="display: block; transform: translate3d(-50%, 227px, 0px);"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="container row">
+                <div class="col s12 m12">
+                    <div class="card z-depth-5">
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">I'm Looking for :<i class="material-icons left">search</i></span>
 
-        <div class="container row">
-            <div class="col s12 m12">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">I'm Looking for :<i class="material-icons left">search</i></span>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col s6">
+                                        <input type="checkbox" class="filled-in" id="brides"/>
+                                        <label for="brides">Brides</label>
+                                    </div>
+                                    <div class="col s6">
+                                        <input type="checkbox" class="filled-in" id="groom"/>
+                                        <label for="groom">Grooms</label>
 
-                        <form action="#">
-                            <div class="row">
-                                <div class="col s6">
-                                    <input type="checkbox" class="filled-in" id="brides"/>
-                                    <label for="brides">Brides</label>
+                                    </div>
                                 </div>
-                                <div class="col s6">
-                                    <input type="checkbox" class="filled-in" id="groom"/>
-                                    <label for="groom">Grooms</label>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <select>
+                                            <option value="" disabled selected>Choose Your Preferred Age Group</option>
+                                            <option value="1">Any</option>
+                                            <option value="2">Below 21</option>
+                                            <option value="3">Between 21 and 25</option>
+                                            <option value="4">Between 26 and 30</option>
+                                            <option value="5">Above 30</option>
+                                        </select>
+                                        <label>Age Group</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <select>
+                                            <option value="" disabled selected>Choose Your Preferred Location</option>
+                                            <option value="1">Any</option>
+                                            <option value="2">Colombo</option>
+                                            <option value="3">Galle</option>
+                                            <option value="4">Kandy</option>
+                                        </select>
+                                        <label>Location</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <button class="btn waves-effect waves-light" type="submit" name="action">Search
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </form>
 
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <select>
-                                        <option value="" disabled selected>Choose Your Preferred Age Group</option>
-                                        <option value="1">Any</option>
-                                        <option value="2">Below 21</option>
-                                        <option value="3">Between 21 and 25</option>
-                                        <option value="4">Between 26 and 30</option>
-                                        <option value="5">Above 30</option>
-                                    </select>
-                                    <label>Age Group</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <select>
-                                        <option value="" disabled selected>Choose Your Preferred Location</option>
-                                        <option value="1">Any</option>
-                                        <option value="2">Colombo</option>
-                                        <option value="3">Galle</option>
-                                        <option value="4">Kandy</option>
-                                    </select>
-                                    <label>Location</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <button class="btn waves-effect waves-light" type="submit" name="action">Search
-                                    <i class="material-icons right">send</i>
-                                </button>
-                            </div>
-                        </form>
-
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
 
         <div class="container">
             <div class="row">
@@ -133,7 +132,7 @@ and open the template in the editor.
 
             <div class="row">
                 <div class="col s12 m6">
-                    <div class="card horizontal">
+                    <div class="card horizontal z-depth-5">
                         <div class="card-image">
                             <img src="images/grooms/annonymous.png" height="100" width="100">
                         </div>
@@ -152,7 +151,7 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="col s12 m6">
-                    <div class="card horizontal">
+                    <div class="card horizontal z-depth-5">
                         <div class="card-image">
                             <img src="images/grooms/annonymous.png" height="100" width="100">
                         </div>
@@ -173,7 +172,7 @@ and open the template in the editor.
             </div>
             <div class="row">
                 <div class="col s12 m6 l3">
-                    <div class="card small">
+                    <div class="card small z-depth-5">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
                         </div>
@@ -188,7 +187,7 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
-                    <div class="card small">
+                    <div class="card small z-depth-5">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
                         </div>
@@ -203,7 +202,7 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
-                    <div class="card small">
+                    <div class="card small z-depth-5">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
                         </div>
@@ -218,7 +217,7 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
-                    <div class="card small">
+                    <div class="card small z-depth-5">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" height="200" width="50" src="images/grooms/hazeem.jpg">
                         </div>
@@ -235,7 +234,7 @@ and open the template in the editor.
             </div>
             <div class="row">
                 <div class="col s12 m6">
-                    <div class="card horizontal customCard">
+                    <div class="card horizontal customCard z-depth-5">
                         <div class="card-stacked">
                             <div class="card-content ansl-card-content">
                                 <span class="card-title">Fathima Zainab</span>
@@ -249,7 +248,7 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="col s12 m6">
-                    <div class="card horizontal customCard">
+                    <div class="card horizontal customCard z-depth-5">
                         <div class="card-stacked">
                             <div class="card-content ansl-card-content">
                                 <span class="card-title">Hazeem Haniff</span>
@@ -293,7 +292,10 @@ and open the template in the editor.
     <script type="text/javascript">
 
         $(document).ready(function () {
+            $('.parallax').parallax();
             $('select').material_select();
+            $("#sticker").sticky({topSpacing: 0, zIndex: 5});
+
         });
 
     </script>

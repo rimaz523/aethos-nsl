@@ -17,6 +17,7 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
         <style>
             body {
                 display: flex;
@@ -36,27 +37,36 @@ and open the template in the editor.
             .brand-logo>div {
                 vertical-align: middle
             }
+            .customCard {
+                height: 200px;
+            }
+            .ansl-blockquote {
+                font-weight: bold;
+                margin-top: -5px;
+            }
         </style>
     </head>
-    <main class="grey lighten-3">
+    <main>
         <!-- Top Menu Starts-->
-        <nav class="blue-grey darken-1">
-            <div class=" container nav-wrapper blue-grey darken-1">
-                <a href="#" class="brand-logo"><div style="font-family:Comic Sans MS;display:inline">Nikkah Sri Lanka</div><i class="large material-icons">group</i></a>
+        <div id="sticker">
+            <nav class="blue-grey darken-1 z-depth-5">
+                <div class=" container nav-wrapper blue-grey darken-1">
+                    <a href="#" class="brand-logo"><div style="font-family:Comic Sans MS;display:inline">Nikkah Sri Lanka</div><i class="large material-icons">group</i></a>
 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="submit.html">Submit A Proposal</a></li>
-                    <li class="active"><a href="about.html">About Us</a></li>
-                </ul>
-            </div>
-        </nav>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="submit.html">Submit A Proposal</a></li>
+                        <li class="active"><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <!-- Top Menu Ends-->
-
+        
         <div class="container row">
             <div class="row">
                 <div class="col s12 m12">
-                    <div class="card blue-grey darken-1">
+                    <div class="card blue-grey darken-1 z-depth-5">
                         <div class="card-content white-text">
                             <span class="card-title"><strong>Who are we?</strong></span>
                             <p>I am a very simple card. I am good at containing small bits of information.
@@ -86,12 +96,6 @@ and open the template in the editor.
 
 
 
-
-
-
-
-
-
     </main>
     <footer class="page-footer blue-grey darken-3">
         <div class="container">
@@ -112,7 +116,10 @@ and open the template in the editor.
     <script type="text/javascript">
 
         $(document).ready(function () {
+            $('.parallax').parallax();
             $('select').material_select();
+            $("#sticker").sticky({topSpacing: 0, zIndex: 5});
+
         });
 
     </script>

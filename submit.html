@@ -17,6 +17,7 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
         <style>
             body {
                 display: flex;
@@ -36,151 +37,159 @@ and open the template in the editor.
             .brand-logo>div {
                 vertical-align: middle
             }
+            .parallax-container {
+                overflow: unset !important;
+            }
         </style>
     </head>
-    <main class="grey lighten-3">
+    <main>
         <!-- Top Menu Starts-->
-        <nav class="blue-grey darken-1">
-            <div class=" container nav-wrapper blue-grey darken-1">
-                <a href="#" class="brand-logo"><div style="font-family:Comic Sans MS;display:inline">Nikkah Sri Lanka</div><i class="large material-icons">group</i></a>
+        <div id="sticker">
+            <nav class="blue-grey darken-1 z-depth-5">
+                <div class=" container nav-wrapper blue-grey darken-1">
+                    <a href="#" class="brand-logo"><div style="font-family:Comic Sans MS;display:inline">Nikkah Sri Lanka</div><i class="large material-icons">group</i></a>
 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="home.html">Home</a></li>
-                    <li class="active"><a href="submit.html">Submit A Proposal</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </div>
-        </nav>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="active"><a href="submit.html">Submit A Proposal</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <!-- Top Menu Ends-->
-
-        <div class="container row">
-            <div class="col s12 m12">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Fill in Proposal Details :<i class="material-icons left">create</i></span>
-                        <form action="#">
-                            <div class="row">
-                                <div class="input-field col s12 m4">
-                                    <input id="first_name" type="text" class="validate">
-                                    <label for="first_name">First Name</label>
-                                </div>
-                                <div class="input-field col s12 m4">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="middle_name">Middle Name</label>
-                                </div>
-                                <div class="input-field col s12 m4">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Last Name</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s4">
-                                    <input class="with-gap" name="gender" type="radio" id="male" />
-                                    <label for="male">Male</label>
-                                </div>
-                                <div class="col s4">
-                                    <input class="with-gap" name="gender" type="radio" id="female" />
-                                    <label for="female">Female</label>
-                                </div>
-                                <div class="input-field col s12 m4">
-                                    <select>
-                                        <option value="1">Fair</option>
-                                        <option value="2">Moderately Fair</option>
-                                        <option value="3">Medium</option>
-                                        <option value="4">Moderately Tanned</option>
-                                        <option value="5">Tanned</option>
-                                    </select>
-                                    <label>Complexion</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12 m6">
-                                    <input id="email" type="email" class="validate">
-                                    <label for="email" data-error="wrong" data-success="right">Email</label>
-                                </div>
-                                <div class="input-field col s12 m6">
-                                    <input id="icon_telephone" type="tel" class="validate">
-                                    <label for="icon_telephone">Telephone</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12 m6">
-                                    <input type="text" class="datepicker" id="dob" name="dob">
-                                    <label for="dob" data-error="wrong" data-success="right">Date of Birth</label>
-                                </div>
-                                <div class="input-field col s12 m6">
-                                    <input id="height" type="text" class="validate">
-                                    <label for="height">Height</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12 m6">
-                                    <input type="text" id="district" class="autocomplete" placeholder="Type for hints...">
-                                    <label for="district">District</label>
-                                </div>
-                                <div class="input-field col s12 m6">
-                                    <input id="city" type="text" class="validate">
-                                    <label for="city">City</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="education" class="materialize-textarea"></textarea>
-                                    <label for="education">Educational Qualifications</label>
-                                </div> 
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="work" class="materialize-textarea"></textarea>
-                                    <label for="work">Work Experience</label>
-                                </div> 
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="additional" class="materialize-textarea"></textarea>
-                                    <label for="additional">Additional Details</label>
-                                </div> 
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="preferences" class="materialize-textarea"></textarea>
-                                    <label for="preferences">Spouse Preferences</label>
-                                </div> 
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12 m6">
-                                    <label for="religious">How religious do you prefer your spouse to be?</label>
-                                </div>
-                                <div class="input-field col s12 m6">
-                                    <p class="range-field">
-                                        <input type="range" id="test5" min="0" max="10" />
-                                    </p>
-                                </div> 
-                            </div>
-                            <div class="row">
-                                <div class="file-field input-field">
-                                    <div class="btn">
-                                        <span>Resume</span>
-                                        <input type="file" multiple>
+        <div class="parallax-container">
+            <div class="parallax"><img src="images/backgrounds/background_1.jpg" style="display: block; transform: translate3d(-50%, 227px, 0px); width:100%"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="container row">
+                <div class="col s12 m12">
+                    <div class="card z-depth-5">
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Fill in Proposal Details :<i class="material-icons left">create</i></span>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="input-field col s12 m4">
+                                        <input id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
                                     </div>
-                                    <div class="file-path-wrapper">
-                                        <input class="file-path validate" type="text" placeholder="Upload your resume (Optional)">
+                                    <div class="input-field col s12 m4">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="middle_name">Middle Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">Last Name</label>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row"></div>
-                            <div class="row">
-                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit Proposal
-                                    <i class="material-icons right">send</i>
-                                </button>
-                            </div>
-                        </form>
+                                <div class="row">
+                                    <div class="col s4">
+                                        <input class="with-gap" name="gender" type="radio" id="male" />
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div class="col s4">
+                                        <input class="with-gap" name="gender" type="radio" id="female" />
+                                        <label for="female">Female</label>
+                                    </div>
+                                    <div class="input-field col s12 m4">
+                                        <select>
+                                            <option value="1">Fair</option>
+                                            <option value="2">Moderately Fair</option>
+                                            <option value="3">Medium</option>
+                                            <option value="4">Moderately Tanned</option>
+                                            <option value="5">Tanned</option>
+                                        </select>
+                                        <label>Complexion</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email" data-error="wrong" data-success="right">Email</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="icon_telephone" type="tel" class="validate">
+                                        <label for="icon_telephone">Telephone</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <input type="text" class="datepicker" id="dob" name="dob">
+                                        <label for="dob" data-error="wrong" data-success="right">Date of Birth</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="height" type="text" class="validate">
+                                        <label for="height">Height</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <input type="text" id="district" class="autocomplete" placeholder="Type for hints...">
+                                        <label for="district">District</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="city" type="text" class="validate">
+                                        <label for="city">City</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="education" class="materialize-textarea"></textarea>
+                                        <label for="education">Educational Qualifications</label>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="work" class="materialize-textarea"></textarea>
+                                        <label for="work">Work Experience</label>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="additional" class="materialize-textarea"></textarea>
+                                        <label for="additional">Additional Details</label>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="preferences" class="materialize-textarea"></textarea>
+                                        <label for="preferences">Spouse Preferences</label>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <label for="religious">How religious do you prefer your spouse to be?</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <p class="range-field">
+                                            <input type="range" id="test5" min="0" max="10" />
+                                        </p>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="file-field input-field">
+                                        <div class="btn">
+                                            <span>Resume</span>
+                                            <input type="file" multiple>
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text" placeholder="Upload your resume (Optional)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row"></div>
+                                <div class="row">
+                                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit Proposal
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </form>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
 
 
@@ -208,7 +217,8 @@ and open the template in the editor.
 
         $(document).ready(function () {
             $('select').material_select();
-
+            $('.parallax').parallax();
+            $("#sticker").sticky({topSpacing: 0, zIndex: 5});
             $('.datepicker').pickadate({
                 selectMonths: true, // Creates a dropdown to control month
                 selectYears: 100, // Creates a dropdown of 15 years to control year,
